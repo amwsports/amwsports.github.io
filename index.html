@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Get in touch with Alex Williams.">
+  <meta name="description" content="Alex Williams.">
   <meta name="theme-color" content="#182026">
-  <title>Alex Williams — Get in touch</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <title>Alex Williams</title>
   <style>
     * { box-sizing: border-box; }
     html { color-scheme: dark; background: #182026; }
@@ -30,7 +31,7 @@
       padding-block: 2rem;
     }
     h1 {
-      margin: 0;
+      margin: 0 0 2.25rem;
       font-family: Georgia, "Times New Roman", serif;
       font-size: clamp(2.5rem, 1.5rem + 4vw, 4.75rem);
       font-weight: 400;
@@ -38,13 +39,6 @@
       letter-spacing: -.035em;
       text-wrap: balance;
       overflow-wrap: break-word;
-    }
-    p {
-      margin: 1.25rem 0 2.25rem;
-      font-size: 1.125rem;
-      font-weight: 400;
-      line-height: 1.6;
-      letter-spacing: .035em;
     }
     .email {
       display: inline-flex;
@@ -67,20 +61,15 @@
     .email:focus-visible { outline: 3px solid #fff; outline-offset: 6px; }
     @media (max-width: 40rem) {
       body { background-position: 38% center; }
-      p { margin-top: 1rem; margin-bottom: 2rem; }
+      h1 { margin-bottom: 2rem; }
     }
-    @media (prefers-reduced-motion: reduce) {
-      .email { transition: none; }
-    }
-    @media (forced-colors: active) {
-      .email { border: 1px solid ButtonText; }
-    }
+    @media (prefers-reduced-motion: reduce) { .email { transition: none; } }
+    @media (forced-colors: active) { .email { border: 1px solid ButtonText; } }
   </style>
 </head>
 <body>
   <main aria-labelledby="name">
     <h1 id="name">Alex Williams</h1>
-    <p>Get in touch</p>
     <a class="email" href="mailto:contact@alexmwilliams.com">Email me</a>
   </main>
 </body>
